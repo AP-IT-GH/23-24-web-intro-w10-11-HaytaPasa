@@ -29,7 +29,7 @@ fetch('https://api.sampleapis.com/coffee/hot/?results=20')
 
               <div id="collapse${i}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-              <img src="${recipe.image}" class="img-small float-start" alt="${recipe.title}"><span class="h6 mt-2">ingrediënten</span>: ${recipe.ingredients} <hr><span class="h6  mt-2">bereiding</span>: ${recipe.description}</div>
+              <img src="${recipe.image}" class="img-small float-start" alt="${recipe.title}"><span class="h6 mt-2 koffiebruin">ingrediënten</span>: ${recipe.ingredients} <hr><span class="h6  mt-2 koffiebruin">bereiding</span>: ${recipe.description}</div>
             </div>
       </div>`;
         }
@@ -39,5 +39,5 @@ fetch('https://api.sampleapis.com/coffee/hot/?results=20')
 
     .catch(function (error) {
         // indien er een fout is, toon in de console dan wat er misloopt
-        console.error("Error with message: " + error)
+        console.error("Error with message: Oeps er is iets fouts gelopen, gelieve later nog eens te proberen." + error)
     });
